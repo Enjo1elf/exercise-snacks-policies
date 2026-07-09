@@ -38,7 +38,7 @@ margin-bottom:30px;
 <body>
 
 <h1>Privacy Policy – Exercise Snacks</h1>
-<p class="meta"><strong>Effective Date:</strong> 04/2026</p>
+<p class="meta"><strong>Effective Date:</strong> 07/2026</p>
 
 <div class="section">
 <h2>1. Controller</h2>
@@ -57,12 +57,11 @@ For purposes of the GDPR, Enrico Jost is the data controller.
 </p>
 </div>
 
-
 <div class="section">
 <h2>2. Overview</h2>
 
 <p>
-Exercise Snacks is an iOS mobile application for self-reflection and challenge management.
+Exercise Snacks is an iOS app for short movement breaks ("exercise snacks") throughout the day – with exercise suggestions, movement reminders, progress and streak tracking, a home screen widget, an optional Apple Health integration, and an Apple Watch companion app.
 </p>
 
 <p>The App:</p>
@@ -70,63 +69,74 @@ Exercise Snacks is an iOS mobile application for self-reflection and challenge m
 <ul>
 <li>Does not require account registration or user account creation</li>
 <li>Does not collect direct personal identifiers</li>
-<li>Stores personal progress data locally on the device only</li>
+<li>Stores personal progress data on your device and – if iCloud is enabled on your device – in your personal, private iCloud</li>
 </ul>
 
 </div>
 
-
 <div class="section">
 <h2>3. Information Collected</h2>
 
-<h3>3.1 Information Stored Locally</h3>
+<h3>3.1 Information Stored Locally and iCloud Sync</h3>
 
-<p>The following data is stored exclusively on the user's device:</p>
+<p>The following data is stored on your device:</p>
 
 <ul>
-<li>Check-ins and events</li>
-<li>Progress values</li>
-<li>Streak data</li>
-<li>Badges and metrics</li>
-<li>Settings</li>
-<li>Internal local identifier ("user_1")</li>
+<li>Workout history (completed and skipped exercise sessions)</li>
+<li>Progress and streak data, achievements/badges, rest days</li>
+<li>Settings (e.g. reminder schedule, language, daily goal)</li>
 </ul>
 
 <p>
-This data is not transmitted to the operator.
-<br>
-Legal Basis (GDPR): Article 6(1)(f) – Performance of a contract.
+This data is not transmitted to the operator. The widget, the Live Activity, and the Apple Watch app access this data only on your device or between your own devices.
 </p>
-
-
-<h3>3.2 Anonymous Aggregated Statistics</h3>
 
 <p>
-To display anonymized community values, the App transmits aggregated metrics to Google Firebase (Firestore), including:
+If iCloud is enabled on your device, this data is additionally backed up and synced across your devices via Apple CloudKit into your personal, private iCloud. The data resides solely in your own iCloud account; the operator has no access to it and keeps no copies. You can disable syncing for the App at any time in the iOS settings (Apple Account → iCloud). Apple's privacy policy applies additionally.
 </p>
 
-<ul>
-<li>Integrity Score</li>
-<li>Streak days</li>
-<li>Level</li>
-<li>Aggregated gameplay metrics</li>
-</ul>
+<p>
+Legal Basis (GDPR): Article 6(1)(b) – performance of a contract.
+</p>
 
-<p>These statistics:</p>
+<h3>3.2 Apple Health (Optional)</h3>
+
+<p>The App offers two optional Health features that can be enabled independently:</p>
 
 <ul>
-<li>Are not linked to names or email addresses</li>
-<li>Do not include user-generated text</li>
-<li>Are associated only with a non-personal internal identifier</li>
+<li><strong>Writing (Health sync):</strong> Completed exercise sessions are saved to Apple Health as workouts, including an estimated active energy (calorie) value.</li>
+<li><strong>Reading (smart reminders):</strong> The App reads your step count for the trailing ~45 minutes to suppress an upcoming reminder when you have recently been active anyway. Where iOS allows it, this also runs in the background (hourly updates delivered by Apple Health).</li>
 </ul>
 
 <p>
-Regarding IP addresses:<br>
-The App does not intentionally transmit IP addresses. However, technical processing by Firebase infrastructure may occur as part of the connection process.
+Both features are disabled by default and require your explicit consent via the iOS permission dialog. All Health data is processed exclusively on your device. It is never transmitted to the operator or any third party, never used for advertising, and never sold. You can revoke the permissions at any time in the Health app or iOS Settings; workouts written by the App can be deleted in Apple Health at any time.
 </p>
 
+<p>
+Legal Basis (GDPR): Article 6(1)(a) and Article 9(2)(a) – explicit consent.
+</p>
 
-  <h3>3.3 Payments and Subscription Processing</h3>
+<h3>3.3 Apple Watch</h3>
+
+<p>
+The optional Apple Watch companion app shows your daily progress, streak, and next exercise, and lets you complete exercise sessions directly from the wrist. For this purpose, progress and exercise data is transferred between your iPhone and your Apple Watch; sessions completed on the watch are reported back to the iPhone (possibly delayed if the iPhone is not reachable).
+</p>
+
+<p>
+This transfer happens directly between your devices using Apple's encrypted device-to-device connection (WatchConnectivity). No operator servers are involved.
+</p>
+
+<p>
+Legal Basis (GDPR): Article 6(1)(b).
+</p>
+
+<h3>3.4 Reminders (Local Notifications)</h3>
+
+<p>
+Movement reminders are scheduled and triggered as local notifications directly on your device. Notification content (e.g. the name of the next exercise) is generated locally and is not stored externally. The smart reminder suppression (see 3.2) also runs entirely on-device.
+</p>
+
+<h3>3.5 Payments and Subscription Processing</h3>
 
 <p>
 Subscriptions are processed exclusively through Apple Inc. via Apple In-App Purchases.
@@ -138,21 +148,13 @@ The App does not collect payment card data.<br>
 Legal Basis (GDPR): Article 6(1)(b)
 </p>
 
-
-<h3>3.4 Push Notifications</h3>
-
-<p>
-The App may use Apple Push Notification Service (APNs) for functional notifications (e.g., reminders). No notification content is stored externally.
-</p>
-
 </div>
-
 
 <div class="section">
 <h2>4. International Data Transfers</h2>
 
 <p>
-Data processed RevenueCat and Apple may be transferred to the United States.
+Data processed by Apple (including iCloud/CloudKit) and RevenueCat may be transferred to the United States.
 Where required under the GDPR, such transfers rely on:
 </p>
 
@@ -163,16 +165,16 @@ Where required under the GDPR, such transfers rely on:
 
 </div>
 
-
 <div class="section">
 <h2>5. Data Retention</h2>
 
 <ul>
-<li>Local data: Stored until active deletion by the user, app reset, or app removal.</li>
+<li>Local data: stored until active deletion by you, app reset, or app removal.</li>
+<li>iCloud data: stored until you delete it from your personal iCloud (controlled via iOS settings).</li>
+<li>Apple Health data: remains in Apple Health and can be deleted there by you at any time.</li>
 </ul>
 
 </div>
-
 
 <div class="section">
 <h2>6. Your Rights (GDPR – EU/EEA Users)</h2>
@@ -189,7 +191,7 @@ Where required under the GDPR, such transfers rely on:
 </ul>
 
 <p>
-As anonymized statistics cannot be attributed to any individual, fulfilling individual access requests for that data may not be possible.
+Since the operator does not store personal data about you, most of these rights are best exercised directly on your device (deleting app data, iCloud and Health settings).
 </p>
 
 <p>
@@ -201,7 +203,6 @@ To submit a request, contact: esdev@posteo.com
 </p>
 
 </div>
-
 
 <div class="section">
 <h2>7. California Privacy Rights (CCPA / CPRA)</h2>
@@ -226,7 +227,6 @@ Requests may be submitted to: esdev@posteo.com
 
 </div>
 
-
 <div class="section">
 <h2>8. Children's Privacy (COPPA)</h2>
 
@@ -238,27 +238,24 @@ If you believe a child under 13 has provided information, please contact us at e
 
 </div>
 
-
 <div class="section">
 <h2>9. Limitation of Liability for Data Loss</h2>
 
 <p>
-Since all personal data is stored exclusively on the user's device, no claim exists for restoration of lost data following a device change, reset, or app removal.
+All personal data is stored on your device and – if iCloud sync is enabled – in your personal iCloud. The operator keeps no copies. No claim exists for restoration of lost data following a device change, reset, or app removal.
 </p>
 
 </div>
-
 
 <div class="section">
 <h2>10. Security</h2>
 
 <p>
-We implement reasonable technical and organizational safeguards to protect data.
+We implement reasonable technical and organizational safeguards to protect data, and rely on Apple's platform security for iCloud sync and device-to-device transfers (encryption in transit).
 However, no system is completely secure.
 </p>
 
 </div>
-
 
 <div class="section">
 <h2>11. Changes to This Policy</h2>
@@ -271,7 +268,6 @@ The effective date at the top of this document indicates when it was last revise
 
 </div>
 
-
 <div class="section">
 <h2>12. Hosting of this Privacy Policy</h2>
 
@@ -281,7 +277,6 @@ Accessing this document may result in technical data (such as your IP address) b
 </p>
 
 </div>
-
 
 </body>
 </html>
